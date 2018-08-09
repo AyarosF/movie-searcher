@@ -1,0 +1,8 @@
+<% i = 0 %>
+<% @titles.each do |title|%>
+    <h1><%= title %></h1>
+    <h2><%= @releases[i]%></h2>
+    <h2><%= @directors[i]%></h2>
+    <img src="<%= @images[i]%>" alt="">
+  <% i += 1 %>
+<% end %>

@@ -1,0 +1,8 @@
+<%= form_tag(root_path, {class: 'form-group'}) do %>
+
+  <%= label_tag 'Choisis un film', nil, class: 'label' %>
+  <%= text_field_tag 'movie', nil, class: 'form-control', id: 'movie' %>
+  <br/>
+  <%= submit_tag "Valider", class: "btn btn-primary" %>
+
+<% end %>
