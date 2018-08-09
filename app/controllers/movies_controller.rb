@@ -12,7 +12,7 @@ class MoviesController < ApplicationController
       begin
         Tmdb::Movie.credits(movie['id'])['crew'].find {|x| x['job'] == 'Director'}['name'].nil?
         rescue StandardError => e
-        @directors << "Réalisateur non disponible"
+        @directors << "une personne non renseignée"
         next
       end
         @directors << Tmdb::Movie.credits(movie['id'])['crew'].find {|x| x['job'] == 'Director'}['name']

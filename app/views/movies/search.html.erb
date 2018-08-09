@@ -1,8 +1,28 @@
-<% i = 0 %>
+<!-- <% i = 0 %>
 <% @titles.each do |title|%>
     <h1><%= title %></h1>
     <h2><%= @releases[i]%></h2>
     <h2><%= @directors[i]%></h2>
     <img src="<%= @images[i]%>" alt="">
   <% i += 1 %>
-<% end %>
+<% end %> -->
+
+<div class="table-container">
+<table class="table table-dark table-hover">
+  <thead>
+
+  </thead>
+  <tbody>
+    <% i = 0 %>
+    <% @titles.each do |title|%>
+      <tr>
+        <td><img src="<%= @images[i]%>" alt=""></td>
+        <td> <%= title %> </td>
+        <td>Réalisé par <%= @directors[i]%></td>
+        <td>Sorti le <%= @releases[i]%></td>
+        <% i += 1 %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>

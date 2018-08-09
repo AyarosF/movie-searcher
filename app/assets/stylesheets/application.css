@@ -12,4 +12,30 @@
  *
  *= require_tree .
  *= require_self
+ *= require bootstrap.css
  */
+
+.formulaire{
+  margin: 100px 300px 100px 300px ;
+}
+
+.table-container {
+  margin: 60px;
+}
+.table > tbody > tr > td {
+     vertical-align: middle;
+}
+
+#allocine {
+  color: yellow;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 50px;
+}
+
+#button {
+ background-color: yellow;
+ color: black;
+}

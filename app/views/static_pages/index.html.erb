@@ -1,8 +1,12 @@
+<h1>Bienvenue sur presque <span id="allocine">AlloCiné</span></h1>
+
+<div class="formulaire">
 <%= form_tag(root_path, {class: 'form-group'}) do %>
 
-  <%= label_tag 'Choisis un film', nil, class: 'label' %>
+  <%= label_tag "Tape ici le nom d'un film", nil, class: 'label' %>
   <%= text_field_tag 'movie', nil, class: 'form-control', id: 'movie' %>
   <br/>
-  <%= submit_tag "Valider", class: "btn btn-primary" %>
+  <%= submit_tag "Valider", class: "btn btn-primary", id:'button' %>
 
 <% end %>
+</div>
