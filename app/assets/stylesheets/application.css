@@ -39,3 +39,12 @@ h1 {
  background-color: yellow;
  color: black;
 }
+
+#mince {
+  font-size: 30px;
+  text-align: center;
+}
+
+#sendmessage {
+  font-size: 20px;
+}

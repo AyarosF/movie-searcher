@@ -1,24 +1,33 @@
-# README
+# Notre application formulaire trop cool - projet THP 31 juillet 2018
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## L'application
 
-Things you may want to cover:
+### En local
 
-* Ruby version
+Après avoir cloné le repo, run :
 
-* System dependencies
+- `bundle install without--production`
 
-* Configuration
+- `rails db:migrate`
 
-* Database creation
+### Heroku
 
-* Database initialization
+Vous trouverez l'application hébergée sur Heroku au lien suivant : https://movie-searcher-thp.herokuapp.com/
 
-* How to run the test suite
+### Le projet
 
-* Services (job queues, cache servers, search engines, etc.)
+Allociné, ou presque...
 
-* Deployment instructions
+Tu renseignes un nom de film sur la page d'accueil et si la recherche renvoie un ou plusieurs films, le site doit afficher les 20 premiers avec :
 
-* ...
+- le nom du film
+- la date de sortie
+- le réalisateur
+- une image s'il y en a une
+
+Big up à la `gem themoviedb`(même si elle nous a causé du fil à retordre)
+PS : Les recherches prennent parfois un peu de temps mais promis juré tout fonctionne !
+
+## La team
+
+Ce programme est made in Strasbourg, by Soraya FRUCTUOSO, Samaneh VAEZI et Hugo PAYET avec amour ! Bonne correction les amis :kissing_heart:
