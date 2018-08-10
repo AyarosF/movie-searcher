@@ -1,4 +1,4 @@
-# Notre application formulaire trop cool - projet THP 31 juillet 2018
+# Movie searcher - projet THP 10 août 2018
 
 ## L'application
 
