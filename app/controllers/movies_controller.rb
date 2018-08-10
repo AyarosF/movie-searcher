@@ -7,7 +7,6 @@ class MoviesController < ApplicationController
     @images = []
     @movies.each do |movie|
       @titles << movie['title']
-      sleep(0.2)
       @releases << movie['release_date']
       @images << "http://image.tmdb.org/t/p/w185#{movie['poster_path']}"
       sleep(0.2)
