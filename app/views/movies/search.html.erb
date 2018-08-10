@@ -17,7 +17,6 @@
       <p id="mince">Mince alors il n'y a aucun résultat pour cette recherche ! 😟 <br /><span id="sendmessage">Mais n'hésite pas à nous envoyer un petit message qu'on ajoute ce film qui, nous sommes certains, est passionnant, à notre liste !</span></p>
     <% else %>
       <% i = 0 %>
-      <% while i < @titles.length && i < 20 %>
         <% @titles.each do |title|%>
           <tr>
             <td><img src="<%= @images[i]%>" alt=""></td>
@@ -27,7 +26,6 @@
             <% i += 1 %>
           </tr>
       <% end %>
-<% end %>
     <% end %>
   </tbody>
 </table>
