@@ -1,20 +1,13 @@
-<!-- <% i = 0 %>
-<% @titles.each do |title|%>
-    <h1><%= title %></h1>
-    <h2><%= @releases[i]%></h2>
-    <h2><%= @directors[i]%></h2>
-    <img src="<%= @images[i]%>" alt="">
-  <% i += 1 %>
-<% end %> -->
-
 <div class="table-container">
 <table class="table table-dark table-hover">
   <thead>
 
   </thead>
   <tbody>
-    <% if @titles.empty?  %>
+    <% if @titles.empty? %>
       <p id="mince">Mince alors il n'y a aucun résultat pour cette recherche ! 😟 <br /><span id="sendmessage">Mais n'hésite pas à nous envoyer un petit message qu'on ajoute ce film qui, nous sommes certains, est passionnant, à notre liste !</span></p>
+    <% elsif @titles.blank?%>
+    <p>Tape quelque chose bon sang</p>
     <% else %>
       <% i = 0 %>
         <% @titles.each do |title|%>
@@ -23,7 +16,7 @@
             <td> <%= title %> </td>
             <td>Réalisé par <%= @directors[i]%></td>
             <td>Sorti le <%= @releases[i]%></td>
-            <% i += 1 %>
+        <% i += 1 %>
           </tr>
       <% end %>
     <% end %>
