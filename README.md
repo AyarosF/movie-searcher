@@ -26,6 +26,7 @@ Tu renseignes un nom de film sur la page d'accueil et si la recherche renvoie un
 - une image s'il y en a une
 
 Big up à la `gem themoviedb`(même si elle nous a causé du fil à retordre)
+
 PS : Les recherches prennent parfois un peu de temps mais promis juré tout fonctionne !
 
 ## La team
