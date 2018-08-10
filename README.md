@@ -14,7 +14,7 @@ Après avoir cloné le repo, run :
 
 Vous trouverez l'application hébergée sur Heroku au lien suivant : https://movie-searcher-thp.herokuapp.com/
 
-### Le projet
+## Le projet
 
 Allociné, ou presque...
 
